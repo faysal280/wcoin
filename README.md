@@ -8,7 +8,7 @@
 ##### `python3 wcoin.py`
 
 ##### Drop star if you liked it
-#### our telegram Channel @mrptechofficial
+#### our telegram Channel: https://t.me/eliteairdrop_official
 
 
 
