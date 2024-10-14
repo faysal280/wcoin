@@ -68,21 +68,21 @@ def print_info_box(social_media_usernames):
     print(Fore.WHITE + Style.BRIGHT + '+' + '-' * (box_width - 2) + '+')
 
 if __name__ == "__main__":
-    banner_text = "MRPTech"
+    banner_text = "FAYSAL"
     os.system('cls' if os.name == 'nt' else 'clear')
     create_gradient_banner(banner_text)
     social_media_usernames = [
-        ("Telegram Channel", "https://t.me/mrptechofficial"),
-        ("Auto Farming", "@mrptechofficial"),
-        ("Auto Farming", "@mosibur_paik"),
+        ("Telegram Channel", "https://t.me/eliteairdrop_official"),
+        ("Twitter", "@faysal280"),
+        ("Facebook", "https://fb.com/faysal280"),
         #("", "@"),
-        ("Coder", "@mosibur_paik"),
+        ("Coder", "@faysal280"),
     ]
     
     print_info_box(social_media_usernames)
     user_input = input("\nEnter Wcoin Session : ")
     balance_input = input("Enter Coin Amount : ")
-    key = input("Enter Authorization Key  : ")
+    key = "GWWT"
     data = main_wcoin(user_input,int(balance_input),key)
     os.system('cls' if os.name == 'nt' else 'clear')
     create_gradient_banner('Done')
