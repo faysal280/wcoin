@@ -76,7 +76,6 @@ if __name__ == "__main__":
         ("Twitter", "@faysal280"),
         ("Facebook", "https://fb.com/faysal280"),
         #("", "@"),
-        ("Coder", "@faysal280"),
     ]
     
     print_info_box(social_media_usernames)
