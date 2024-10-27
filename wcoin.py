@@ -81,7 +81,7 @@ if __name__ == "__main__":
     print_info_box(social_media_usernames)
     user_input = input("\nEnter Wcoin Session : ")
     balance_input = input("Enter Coin Amount : ")
-    key = "GWWT"
+    key = "WCOIN-SNAPSHOT"
     data = main_wcoin(user_input,int(balance_input),key)
     os.system('cls' if os.name == 'nt' else 'clear')
     create_gradient_banner('Done')
