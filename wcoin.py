@@ -25,18 +25,15 @@ headers = {
     'sec-fetch-site': 'cross-site',
     'x-requested-with': 'org.telegram.plus',
 }
-
 init(autoreset=True)
-
-def main_wcoin(session ,amount, key):
-    parsed_url = urlparse(session)
-    query_params = parse_qs(parsed_url.fragment)
-    tgWebAppData = query_params.get('tgWebAppData', [None])[0]
-    user_data = parse_qs(tgWebAppData)['user'][0]
-    user_data = json.loads(user_data)
-    identifier = str(user_data['id'])
-    json_data = {
-            'identifier':identifier,
+def main_wcoin(session, amount, key):
+parsed_url = urlparse(session)
+query_params = parse_qs(parsed_url.fragment)
+tgWebAppData = query_params.get('tgWebAppData', [None])[0]
+parsed_data = parse_qs(tgWebAppData)
+if 'user' in parsed_data:
+user_data = json.loads(parsed_data['user'][0])
+'identifier':identifier,
             'password': identifier,
         }
     res = requests.post('https://starfish-app-fknmx.ondigitalocean.app/wapi/api/auth/locall', json=json_data).json()
